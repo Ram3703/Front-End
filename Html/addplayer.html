@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    #header,#heading,#footer{
+        border: 1px solid black;
+        width: auto;
+        height: auto;
+        background-color: darkviolet;
+    } 
+    #heading{
+        background-color: aqua;
+    }
+    #footer{
+        height: 50px;
+    }
+</style>
+<body>
+    <div id=header >
+        <h2 style="text-align: center; font-size: large; color: aquamarine;"> Player Details </h2>
+    </div>\
+    <form action="method">
+    
+    <div id="heading" style="margin-top: 10px; text-align: center;"> <br>
+        <label for="enter your name">Name: </label>
+        <input type="text" name="" id="name" placeholder="Enter your Name"><br><br>
+        <label for="">DOB:</label>
+        <input type="date" name="" id="dob" placeholder="DD/MM/YYYY"><br><br>
+        <label for="">Age:</label>
+        <input type="number" name="" id="age" placeholder="Enter your age"><br><br>
+        <label for="">Email Id:</label>
+        <input type="email" name="" id="email" placeholder="abc12@xyz.com"><br><br>
+        <label for="">Country:</label>
+        <select name="" id="country"><br><br>
+            <option value="">india</option>
+            <option value="">China</option>
+            <option value="">indonesia</option>
+            <option value="">italy</option>
+        </select><br><br>
+        <label for="">Skill:</label>
+        <input type="checkbox" name="Batting" id="skill">Batting
+        <input type="checkbox" name="Bowling" id="skill">Bowling <br><br>
+        <label for="">Bat Style</label>
+        <input type="radio" name="" id="bat">Right Handed
+        <input type="radio" name="" id="bat">Left Handed <br><br>
+        <label for="">Bowl Style</label>
+        <input type="radio" name="" id="bowl">Right Handed
+        <input type="radio" name="" id="bowl">Left Handed <br><br>
+        <label for="">Matches</label>
+        <input type="number" name="" id="match" placeholder="Matches Played"><br><br>
+        <label for="">Runs</label>
+        <input type="number" name="" id="run" placeholder="Total runs scored"><br><br>
+        <label for="">Wickets:</label>
+        <input type="number" name="" id="wicket" placeholder="wickets"><br><br>
+        <label for="">achievements:</label>
+        <textarea name="" id="" cols="30" rows="7" placeholder="your achievements in cricket"></textarea>
+    </div>
+    <br><br>
+    <div id="footer" style="text-align: center; padding-top: 10px;" >
+        <input type="button" value="Submit" style="width: 100px; height: 30px; margin-right: 30px; "> 
+        <input type="button" value="reset" style="width: 100px; height: 30px; "> 
+
+    </div>
+</form>
+
+</body>
+</html>
