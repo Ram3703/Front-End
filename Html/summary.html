@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>
+        Match Summary
+    </title>
+    <script>
+        function myfunc() {
+            var sc1 = document.getElementById("scoreA").value;
+            var sc2 = document.getElementById("scoreB").value;
+            var first = document.getElementById("teamA").value;
+            var Sec = document.getElementById("teamB").value;
+            var res1 = new Array();
+            var res2 = new Array();
+            res1 = sc1.split("/");
+            res2 = sc2.split("/");
+            if (parseInt(res1[0]) > parseInt(res2[0])) {
+                document.getElementById("dem").innerHTML = first;
+
+
+            } else {
+                document.getElementById("dem").innerHTML = Sec;
+
+            }
+
+
+
+        }
+    </script>
+</head>
+<style>
+    #body{
+        border: 1px solid black;
+        width: 400px;
+        height: auto;
+        margin: auto;
+    }
+</style>
+
+<body id="body">
+    <center>
+        <h1>Match Summary
+        </h1>
+        <form>
+
+        </form>
+        <table>
+            <tr>
+                <td>Team A
+                </td>
+                <td><input type="text" id="teamA" name="teamA">
+                </td>
+            </tr>
+            <tr>
+                <td>TeamB
+                </td>
+                <td><input type="text" id="teamB" name="teamB">
+                </td>
+            </tr>
+            <tr>
+                <td>Date
+                </td>
+                <td><input type="date" id="date" name="date">
+                </td>
+            </tr>
+            <tr>
+                <td>Time
+                </td>
+                <td><input type="time" id="time" name="time">
+                </td>
+            </tr>
+            <tr>
+                <td>Team A Score
+                </td>
+                <td><input type="text" id="scoreA" name="scoreA">
+                </td>
+            </tr>
+            <tr>
+                <td>Team B Score
+                </td>
+                <td><input type="text" id="scoreB" name="scoreB">
+                </td>
+            </tr>
+        </table><br>
+        <input type="submit" value="save" onclick="myfunc()">
+        <h4>Winning Team:</h4>
+        <p id="dem"> wins</p>
+
+
+    </center>
+
+</body>
+
+</html>
